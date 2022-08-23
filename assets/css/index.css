@@ -1,0 +1,46 @@
+.iconfont {
+    margin-right: 6px;
+}
+
+.layui-icon {
+    margin-right: 6px;
+
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transition: none !important;
+}
+
+.userinfo {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    user-select: none;
+}
+
+.userinfo img {
+    width: 40px;
+    height: 40px;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #282b33;
+}
+
+.text-avatar {
+    display: inline-block;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+
+    background-color: #009688;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+}
