@@ -68,7 +68,9 @@ $('#form_login').on('submit', function(e) {
             if (res.status !== 0) {
                 return layer.msg(res.message)
             }
+            // 弹窗
             layer.msg(res.message)
+
             // 跳转网页
             // location.assign('https://fanyi.sogou.com/text?keyword=navigate&transfrom=auto&transto=zh-CHS&model=general&fr=websearch_submit')
             // 跳转本地
