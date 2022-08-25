@@ -4,7 +4,7 @@
 
     let layer = layui.layer
     $('#quit').click(function () {
-        layer.confirm('is not?', { icon: 3, title: '提示' }, function (index) {
+        layer.confirm('是否退出?', { icon: 3, title: '提示' }, function (index) {
             // 点击确认后，执行的操作
             // 清空本地存储的token值
             localStorage.removeItem('token')
@@ -15,8 +15,8 @@
         });
     })
 
-    
-})()
+    console.log('index.js')
+})();
 
 function getUserInfo() {
     // 携带请求头才能访问
@@ -37,7 +37,6 @@ function getUserInfo() {
 
         // 如果跳过登录，直接打开首页，就要强制清空本地token并且跳转回登录页
         complete: function(res) {
-            console.log(res)
             if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
                 // 强制清除本地token
                 localStorage.removeItem('token')
@@ -52,9 +51,9 @@ function renderAvatar(user) {
     // 渲染用户名
     let name = user.nickname || user.username
     $('.username').html('欢迎&nbsp&nbsp' + name)
-    console.log(user)
     // 渲染头像
     if (!user.user_pic) {
+        console.log(user.user_pic)
         $('.layui-nav-img').hide()
         $('.text-avatar').html(name[0].toUpperCase()).show()
     } else {

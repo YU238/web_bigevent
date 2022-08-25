@@ -12,7 +12,6 @@ $.ajaxPrefilter(function(option) {
     
     // 如果跳过登录，直接打开首页，就要强制清空本地token并且跳转回登录页
     option.complete = function(res) {
-        console.log(res)
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             // 强制清除本地token
             localStorage.removeItem('token')

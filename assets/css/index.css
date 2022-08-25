@@ -44,3 +44,8 @@ a {
     color: #fff;
     font-size: 20px;
 }
+
+iframe {
+    padding: 15px;
+    background-color: #f1f2f5;
+}
