@@ -1,0 +1,16 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-right: 30px;
+}
+
+.layui-btn-normal {
+    margin-top: 5px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
